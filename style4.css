@@ -1,0 +1,348 @@
+
+
+
+
+body {
+ margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1c20; /* Dark grey background */
+  max-width: 1400px;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: -80px;
+}
+
+
+.first-image img {
+  max-width: 1200px;   /* keeps it inside the parent width */
+  width: 80%;      /* you can adjust this size (try 250px–400px) */
+  height: 50%;      /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto 20px; /* centers image and adds spacing below */
+  border-radius: 12px; /* optional: gives it rounded corners */
+}
+
+@media (max-width: 768px) {
+  .first-image img {
+    width: 100%;     /* full width on mobile */
+    height: auto;    /* keep aspect ratio */
+  }
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: white;
+
+   border-bottom: 1px solid #ddd; /* light gray line */
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+
+}
+
+@media (max-width: 768px) {
+  .section .the-images {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section .solution-image,
+  .section .points {
+    flex: 1 1 100%;
+  }
+
+  .section .arrow {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .section .points ul {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+
+.section h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #4CAF50;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4CAF50;
+}
+
+.back {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.the-images{
+  display: flex;
+  gap: 50px;
+}
+
+.the-images p {
+  padding: 0 20px;
+}
+
+.points{
+  margin-top: 70px;
+}
+
+.arrow {
+  margin-top: 150px;
+  font-size: 3rem;
+  color: white; /* arrow color */
+}
+
+.prototype img {
+  max-width: 100px;   /* keeps it inside the parent width */
+  width: 20%;      /* you can adjust this size (try 250px–400px) */
+  height: 20%;      /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto 20px; /* centers image and adds spacing below */
+  border-radius: 12px; /* optional: gives it rounded corners */
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+.lessons-list li {
+  margin-bottom: 20px; /* adds spacing between items */
+  line-height: 1.6;   /* makes the text more readable */
+}
+
+
+.contact-cta {
+  display: flex;
+  align-items: center;       /* vertical alignment */
+  justify-content: space-between; /* left content vs right content */
+  padding-bottom: 32px;
+}
+
+
+.contact-cta p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+.contact-cta .thanks {
+  font-size: 1.25rem; /* a little bigger like the image */
+  font-weight: 700;
+}
+
+.contact-cta a {
+  text-decoration: none;
+}
+
+.contact-cta a[href^="mailto:"] {
+  font-style: italic;
+}
+
+.scroll-top {
+  display: inline-block; /* optional */
+  font-size: 0.95rem;
+  color: #4CAF50; 
+  margin-top: 6px;
+  /* no float needed — flexbox handles the alignment */
+}
+
+.scroll-top:hover {
+  text-decoration: underline;
+}
+
+.one{
+  margin-bottom: 10px;
+}
+
+.two{
+   margin-bottom: 10px;
+}
+
+.three{
+  margin-bottom: 10px;
+}
+
+.four{
+  margin-bottom: 10px;
+}
+
+.solution-image2{
+  max-width: 500px;
+  width: 100%;      /* you can adjust this size (try 250px–400px) */
+  height: 20%;      /* keeps aspect ratio */
+  display: block;
+  border-radius: 12px; /* optional: gives it rounded corners */
+}
+
+.space li{
+  margin-bottom: 10px;
+}
+
+
+.journey-map-cards {
+  margin: 50px auto;
+  max-width: 1000px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding: 60px 20px;
+  color: black;
+}
+
+.journey-map-cards h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.journey-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.journey-cards .card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.journey-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.journey-cards .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.journey-cards .card p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flex container for images */
+.the-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Each image container */
+.solution-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+/* Responsive typography */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
+
+/* Force left alignment for persona and similar sections on mobile */
+@media (max-width: 768px) {
+  .section p,
+  .section ul,
+  .section li {
+    text-align: left !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
