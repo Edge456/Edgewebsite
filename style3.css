@@ -37,6 +37,7 @@ body {
   align-items: center;
   padding: 0 20px;
   margin-top: 10px;
+ position: relative;
 }
 
 /* Hamburger icon */
@@ -59,7 +60,7 @@ body {
 
 /* Menu styles */
 .menu-links {
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   top: 8%;
   right: 0%;
@@ -91,6 +92,8 @@ body {
 
 .menu-links.open {
   max-height: 300px;
+   top: 40px;
+  
 }
 
 /* Hamburger animation */
@@ -348,4 +351,5 @@ body {
   color: white;
   margin: 0;
 }
+
 
