@@ -578,9 +578,9 @@ html{
 
 .inner-place{
   background-color: rgb(50, 107, 107);
-   padding: 50px 50px;
+   padding: 10px 9px;
   border-radius: 15px;
-  margin-top: -19px;
+  margin-top: 0;
   
 }
 
@@ -792,6 +792,7 @@ html{
   color: white;
   margin: 0;
 }
+
 
 
 
