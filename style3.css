@@ -37,7 +37,7 @@ body {
   align-items: center;
   padding: 0 20px;
   margin-top: 10px;
- position: relative;
+  position: relative;
 }
 
 /* Hamburger icon */
@@ -92,8 +92,7 @@ body {
 
 .menu-links.open {
   max-height: 300px;
-   top: 40px;
-  
+  top: 40px;
 }
 
 /* Hamburger animation */
@@ -115,6 +114,29 @@ body {
   .Burger {
     display: flex;
   }
+  .picture{
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .picture{
+    padding: 0 10px;
+  }
+  .picture img {
+    border-radius: 8px;
+  }
+}
+
+.picture{
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
 
@@ -202,9 +224,9 @@ body {
 
 .inner-place{
   background-color: rgb(50, 107, 107);
-   padding: 10px 9px;
+   padding: 50px 50px;
   border-radius: 15px;
-  margin-top: 0px;
+  margin-top: -19px;
  
   
 }
@@ -351,6 +373,4 @@ body {
   color: white;
   margin: 0;
 }
-
-
 
