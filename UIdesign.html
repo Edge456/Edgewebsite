@@ -19,12 +19,12 @@
   <nav class="navbar">
     <div class="logo">Omosehin Samson</div>
     <ul class="nav-links">
-      <a href="index.html">Home</a>
+      <a href="new.html">Home</a>
       <a href="CV.html/MY NEW CV2.pdf">Resume</a>
       <a href="artwork.html">Art works</a>
     </ul>
     <div class="hire">
-        <a href="index.html#contact" class="hire-btn">Hire Me</a>
+        <a href="new.html#contact" class="hire-btn">Hire Me</a>
 
       </div>
   </nav>
@@ -40,10 +40,10 @@
   </div>
 
   <ul class="menu-links">
-    <li><a href="index.html" onclick="togglemenu()">Home</a></li>
+    <li><a href="new.html" onclick="togglemenu()">Home</a></li>
     <li><a href="CV.html/MY NEW CV2.pdf" onclick="togglemenu()">Resume</a></li>
     <li><a href="artwork.html" onclick="togglemenu()">Artworks</a></li>
-    <li><a href="index.html#contact" class="hire-btn" onclick="togglemenu()">Hire Me</a></li>
+    <li><a href="new.html#contact" class="hire-btn" onclick="togglemenu()">Hire Me</a></li>
   </ul>
 </nav>
 
@@ -62,42 +62,18 @@
 
  <!-- NEXT PLACE -->
 
-  <div class="projects-grid">
-    <div class="project-card">
-       <div class="inner-place">
-        <img src="images.webp/racket.png" alt="Project 1">
-    </div>
-      
-      <h4>BOSS</h4>
-      <button class="read-more"  onclick="window.open('https://www.figma.com/proto/azlhbQcOJqRHue7nFACAzG/Untitled?node-id=162-30&t=LkbN0TQTy1NfiJHt-1','_blank')">View</button>
-    </div>
 
-    <div class="project-card">
-      <div class="inner-place">
-        <img src="images.webp/adidas.jpg" alt="Project 2">
-      </div>
-      <h4>Adidas shoes</h4>
-      <button class="read-more"  onclick="window.open('https://www.figma.com/proto/NZJAG3Sj2iQVUY6gFkGG2J/Untitled?node-id=471-29&t=xGYfyLJnwqYDB4Lq-1','_blank')" >View</button> </div>
+ <div class="picture">
+        <img src="images.webp/Addidas UI.png" alt="Project 1">
     </div>
-
-
-
-  <div class="projects-grid">
-    <div class="project-card">
-       <div class="inner-place">
-        <img src="images.webp/Sapizza.jpg" alt="Project 1">
+ <div class="picture">
+        <img src="images.webp/Sapizza UI.png" alt="Project 1">
     </div>
-      
-      <h4>Sapizza</h4>
-      <button class="read-more"  onclick="window.open('https://www.figma.com/proto/MzhhOPDDWXhalz3kQnVih4/Untitled?node-id=2338-681&t=mRiOoVbixVAGdC4r-1','_blank')">View</button>
+ <div class="picture">
+        <img src="images.webp/Artbynova UI.png" alt="Project 1">
     </div>
-
-    <div class="project-card">
-      <div class="inner-place">
-        <img src="images.webp/Art by Nova light.jpg" alt="Project 2">
-      </div>
-      <h4>Art by nova </h4>
-      <button class="read-more"  onclick="window.open('https://www.figma.com/proto/GdFmZumoesVa0aFFREMpkq/Untitled?node-id=428-1230&t=ZKyk8kdpRafIDpEw-1','_blank')" >View</button> </div>
+ <div class="picture">
+        <img src="images.webp/Elivisn UI.png" alt="Project 1">
     </div>
 
 
@@ -105,24 +81,6 @@
 
     
 
-
-     <div class="projects-grid2">
-    <div class="project-card">
-       <div class="inner-place">
-        <img src="images.webp/Elivisn light.png" alt="Project 1">
-    </div>
-      
-      <h4>Elivisn</h4>
-      <button class="read-more"  onclick="window.open('https://www.figma.com/proto/GdFmZumoesVa0aFFREMpkq/Untitled?node-id=599-2097&t=zO2nHuPRAK21Wmxl-1','_blank')">View</button>
-    </div>
-
-    <div class="project-card">
-      <div class="inner-place">
-        <img src="images.webp/Xpress music.png" alt="Project 2">
-      </div>
-      <h4>Xpress music</h4>
-      <button class="read-more" onclick="window.open('https://www.figma.com/proto/K1LOKd9pzo6yFbjPAWhmF9/click-art?node-id=1206-1753&t=aR59LLAIq9yCxGOS-1','_blank')">View</button> </div>
-    </div>
 
 
 
@@ -203,6 +161,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+
+  // Animate UI showcase images (Sapizza UI & Adidas UI)
+  gsap.from(".picture img", {
+    scrollTrigger: {
+      trigger: ".picture",
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    y: 40,
+    autoAlpha: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out"
+  });
+
+  // PROJECT CARDS (first grid)
+  gsap.from(".projects-grid .project-card", {
+    scrollTrigger: { trigger: ".projects-grid", start: "top 80%" },
+    y: 40,
+    autoAlpha: 0,
+    duration: 0.9,
+    stagger: 0.2
+  });
+
+
   
 
   // PROJECT CARDS (first grid)
@@ -270,11 +253,4 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
 </body>
-
 </html>
-
-
-
-
-
-
